@@ -1,0 +1,27 @@
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000
+springdoc:
+  swagger-ui:
+    tryItOutEnabled: true
+    oauth:
+      # additionalQueryStringParams: 
+      #   audience: "audience"
+      clientId: client_id
+      clientSecret: secret
+      scopes: openid,offline_access
+      useBasicAuthenticationWithAccessCodeGrant: true
+    oAuthFlow:
+      openIdConnectUrl: https://localhost:9000
+springdoc-custom:
+  server:
+    authorizationUrl: http://localhost:9000/oauth2/authorize
+    tokenUrl: "http://localhost:9000/oauth2/token"
