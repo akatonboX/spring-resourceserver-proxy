@@ -30,10 +30,3 @@ springdoc:
       clientSecret: secret
       scopes: openid,profile,offline_access
       useBasicAuthenticationWithAccessCodeGrant: true
-    oAuthFlow:
-      openIdConnectUrl: https://localhost:9000
-springdoc-custom:
-  server:
-    authorizationUrl: http://localhost:9000/oauth2/authorize
-    tokenUrl: "http://localhost:9000/oauth2/token"
-

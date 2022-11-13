@@ -19,8 +19,7 @@ springdoc:
       clientSecret: secret
       scopes: openid,offline_access
       useBasicAuthenticationWithAccessCodeGrant: true
-    oAuthFlow:
-      openIdConnectUrl: https://localhost:9000
+
 springdoc-custom:
   server:
     authorizationUrl: http://localhost:9000/oauth2/authorize

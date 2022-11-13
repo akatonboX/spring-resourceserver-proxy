@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "springdoc-custom.server.authorizationUrl",
+    "type": "java.lang.String",
+    "description": "認証サーバの認可コードフローにおける、認可エンドポイントのURL"
+  },
+  {
+    "name": "springdoc-custom.server.token-url",
+    "type": "java.lang.String",
+    "description": "認証サーバの認可コードフローにおける、トークンエンドポイントのURL"
+  }
+]}
